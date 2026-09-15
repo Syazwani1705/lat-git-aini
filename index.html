@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,6 +84,112 @@
                 font-size: 32px;
             }
         }
+
+        /* =========================
+   PRODUK - SISWA B
+========================= */
+
+        .produk {
+            padding: 70px 20px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .produk h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .produk-desc {
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .produk-container {
+            max-width: 1000px;
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .produk-card {
+            width: 280px;
+            background: white;
+            padding: 25px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+            transition: 0.3s;
+        }
+
+        .produk-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .produk-img {
+            height: 160px;
+            background: #eee;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 70px;
+
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .produk-card h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .produk-card p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .produk-card strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .produk-card button {
+            border: none;
+
+            padding: 12px 20px;
+
+            background: #222;
+            color: white;
+
+            border-radius: 6px;
+
+            cursor: pointer;
+        }
+
+        .produk-card button:hover {
+            background: #444;
+        }
+
+
+        /* RESPONSIVE PRODUK */
+
+        @media (max-width: 700px) {
+
+            .produk-card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+        }
     </style>
 </head>
 
@@ -110,6 +217,79 @@
         </div>
 
     </section>
+    <section class="produk" id="produk">
+
+        <h2>Produk Pilihan</h2>
+
+        <p class="produk-desc">
+            Temukan produk terbaik dari kelompok kami.
+        </p>
+
+        <div class="produk-container">
+
+            <div class="produk-card">
+
+                <div class="produk-img">
+                    🌸
+                </div>
+
+                <h3>Produk Premium</h3>
+
+                <p>
+                    Produk premium dengan kualitas
+                    terbaik dan desain menarik.
+                </p>
+
+                <strong>Rp150.000</strong>
+
+                <button>Beli Sekarang</button>
+
+            </div>
+
+
+            <div class="produk-card">
+
+                <div class="produk-img">
+                    🌹
+                </div>
+
+                <h3>Produk Eksklusif</h3>
+
+                <p>
+                    Produk eksklusif dengan kualitas
+                    terbaik untuk pelanggan.
+                </p>
+
+                <strong>Rp200.000</strong>
+
+                <button>Beli Sekarang</button>
+
+            </div>
+
+
+            <div class="produk-card">
+
+                <div class="produk-img">
+                    💐
+                </div>
+
+                <h3>Produk Favorit</h3>
+
+                <p>
+                    Produk favorit pelanggan
+                    dengan kualitas terbaik.
+                </p>
+
+                <strong>Rp250.000</strong>
+
+                <button>Beli Sekarang</button>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
+
 </html>
